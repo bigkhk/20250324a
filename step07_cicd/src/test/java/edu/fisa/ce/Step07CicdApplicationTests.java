@@ -12,7 +12,7 @@ class Step07CicdApplicationTests {
 		int result = 12 + 3;
 
 		System.out.println("비교 전***********");
-		assertEquals(15, result);  
+		assertEquals(1, result);  
 		
 		System.out.println("비교 후***********");
 	}
