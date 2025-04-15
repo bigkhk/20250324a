@@ -41,5 +41,6 @@ sonar {
   properties {
     property "sonar.projectKey", "step01_projectkey"
     property "sonar.projectName", "step01"
+    property "sonar.host.url", "http://host.docker.internal:9000" 
   }
 }
