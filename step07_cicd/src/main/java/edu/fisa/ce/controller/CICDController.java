@@ -15,7 +15,7 @@ public class CICDController {
 
 	//http://localhost/fisa1
 	@GetMapping("fisa2")
-	public String reqRes() {
+	public String reqRes2() {
 		try{
 			System.out.println("reqRes() *******");
 		}catch(Exception e){}
