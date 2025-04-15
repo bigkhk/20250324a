@@ -2,6 +2,7 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.4.4'
 	id 'io.spring.dependency-management' version '1.1.7'
+	id 'org.sonarqube' version '6.0.1.5171' // 🔹 추가
 }
 
 group = 'fisa'
@@ -34,4 +35,13 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+sonar {
+	properties {
+		property "sonar.projectKey", "step07_cicd"
+		property "sonar.projectName", "step07_cicd"
+		// 선택사항: 필요 시 아래도 추가 가능
+		// property "sonar.host.url", "http://localhost:9000"
+	}
 }
